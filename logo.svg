@@ -1,0 +1,36 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- Subtle top shine -->
+  <rect width="512" height="256" rx="112" fill="url(#shine)"/>
+
+  <!-- Left source dot -->
+  <circle cx="152" cy="128" r="32" fill="white" opacity="0.9"/>
+  <!-- Right source dot -->
+  <circle cx="360" cy="128" r="32" fill="white" opacity="0.9"/>
+
+  <!-- Left arm down to merge point -->
+  <line x1="152" y1="152" x2="248" y2="280" stroke="white" stroke-width="44" stroke-linecap="round"/>
+  <!-- Right arm down to merge point -->
+  <line x1="360" y1="152" x2="264" y2="280" stroke="white" stroke-width="44" stroke-linecap="round"/>
+
+  <!-- Merge node -->
+  <circle cx="256" cy="296" r="38" fill="white"/>
+
+  <!-- Output stem -->
+  <line x1="256" y1="330" x2="256" y2="410" stroke="white" stroke-width="44" stroke-linecap="round"/>
+
+  <!-- Arrowhead at bottom -->
+  <polygon points="256,452 218,396 294,396" fill="white"/>
+</svg>
